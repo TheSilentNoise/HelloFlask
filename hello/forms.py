@@ -1,5 +1,6 @@
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import TextField, validators
 
-class CommentForm(Form):
+
+class CommentForm(FlaskForm):
     text = TextField('Comment', [validators.Required()])
